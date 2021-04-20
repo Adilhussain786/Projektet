@@ -1,0 +1,391 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.hem-container {
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(rgb(0, 0, 0, 0.4), #66964e), url(sport.jpg);
+}
+
+
+/*-----header-----*/
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 10vh;
+    font-family: sans-serif;
+}
+
+.rubrik {
+    color: rgb(226, 226, 226);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-länker {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 30%;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    padding: 30px 0;
+}
+
+.nav-länker li {
+    list-style: none;
+}
+
+.nav-länker li::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background: rgb(226, 226, 226);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-länker li:hover::after {
+    width: 100%;
+}
+
+.nav-länker a {
+    color: rgb(226, 226, 226);
+    text-decoration: none;
+    font-size: 15px;
+}
+
+span {
+    color: greenyellow;
+}
+
+.meny {
+    font-size: 2rem;
+    margin: 0 30px;
+    display: none;
+    cursor: pointer;
+    color: rgb(226, 226, 226);
+    z-index: 2;
+}
+
+.close_meny {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+    color: rgb(226, 226, 226);
+    z-index: 11;
+}
+
+
+/*-----content-----*/
+
+.centralt-text {
+    text-align: center;
+    color: rgb(226, 226, 226);
+    padding-top: 150px;
+    letter-spacing: 2px;
+}
+
+.centralt-text h1 {
+    font-size: 100px;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.centralt-text p {
+    font-size: 15px;
+    font-style: italic;
+}
+
+.banner {
+    text-align: center;
+    margin: 40px auto 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+.banner a {
+    width: 120px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 12px 0;
+    color: rgb(226, 226, 226);
+    border: .5px solid rgb(226, 226, 226);
+    position: relative;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.banner a span {
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgb(226, 226, 226);
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.banner a:hover {
+    color: #093028;
+}
+
+.banner a:hover span {
+    width: 100%;
+}
+
+.pil {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 160px;
+    cursor: pointer;
+}
+
+
+/*-----content-Aktiviteter-----*/
+
+.bakgrund {
+    width: 100%;
+    min-height: 100vh;
+    background-position: center;
+    background-image: radial-gradient(circle at 13% 47%, rgba(140, 140, 140, 0.03) 0%, rgba(140, 140, 140, 0.03) 25%, transparent 25%, transparent 100%), radial-gradient(circle at 28% 63%, rgba(143, 143, 143, 0.03) 0%, rgba(143, 143, 143, 0.03) 16%, transparent 16%, transparent 100%), radial-gradient(circle at 81% 56%, rgba(65, 65, 65, 0.03) 0%, rgba(65, 65, 65, 0.03) 12%, transparent 12%, transparent 100%), radial-gradient(circle at 26% 48%, rgba(60, 60, 60, 0.03) 0%, rgba(60, 60, 60, 0.03) 6%, transparent 6%, transparent 100%), radial-gradient(circle at 97% 17%, rgba(150, 150, 150, 0.03) 0%, rgba(150, 150, 150, 0.03) 56%, transparent 56%, transparent 100%), radial-gradient(circle at 50% 100%, rgba(25, 25, 25, 0.03) 0%, rgba(25, 25, 25, 0.03) 36%, transparent 36%, transparent 100%), radial-gradient(circle at 55% 52%, rgba(69, 69, 69, 0.03) 0%, rgba(69, 69, 69, 0.03) 6%, transparent 6%, transparent 100%), linear-gradient(90deg, rgb(255, 255, 255), rgb(255, 255, 255));
+    background-size: cover;
+}
+
+.pil2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    padding-top: 10px;
+}
+
+.content-aktiviteter {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.content-aktiviteter h1 {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    padding-top: 70px;
+}
+
+.ak-rubrik {
+    color: #2c634c;
+}
+
+.content-aktiviteter .p1 {
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.content-aktiviteter .p2 {
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+.rad {
+    border-bottom: 2px solid #2c634c;
+    display: block;
+    margin: 10px auto;
+    max-width: 1000px;
+}
+
+.fotboll-kort {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fotboll {
+    flex-basis: 50%;
+    padding: 60px 12px;
+    box-sizing: border-box;
+}
+
+.fotboll img {
+    box-shadow: -28px 30px 5px -4px rgba(44, 99, 76, 0.59);
+    -webkit-box-shadow: -28px 30px 5px -4px rgba(44, 99, 76, 0.59);
+}
+
+.fotboll-text {
+    margin-left: 100px;
+}
+
+.fotboll-text h1 {
+    padding: 10px;
+    color: #2c634c;
+}
+
+.fotboll-text p {
+    font-family: 'Poppins', sans-serif;
+}
+
+.tävling-kort {
+    margin: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tävling {
+    flex-basis: 50%;
+    padding: 60px 12px;
+    box-sizing: border-box;
+}
+
+.tävling-text h1 {
+    padding: 10px;
+    color: #B20809;
+}
+
+.tävling img {
+    box-shadow: 31px 33px 5px -4px rgba(178, 8, 9, 0.59);
+    -webkit-box-shadow: 31px 33px 5px -4px rgba(178, 8, 9, 0.59);
+}
+
+.tävling-text {
+    margin-right: 100px;
+}
+
+.tävling-text h1 {
+    padding: 10px;
+}
+
+.tävling-text p {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/*-----mobil display-----*/
+
+@media screen and (max-width:1024px) {
+    .nav-länker {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+    .nav-länker {
+        position: fixed;
+        height: 100vh;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background: #093028;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #577747, #093028);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #577747, #093028);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        transition: top 1s ease;
+        display: none;
+    }
+    .nav-länker li {
+        opacity: 1;
+    }
+    .nav-länker a {
+        font-size: 30px;
+    }
+    span {
+        color: rgb(226, 226, 226);
+    }
+    .close_meny {
+        display: block;
+        position: absolute;
+        left: 30px;
+        top: 20px;
+    }
+    .meny {
+        display: block;
+    }
+    .rubrik {
+        font-size: 10px;
+        margin-left: 12px;
+    }
+    .centralt-text h1 {
+        font-size: 50px;
+    }
+    .centralt-text p {
+        font-size: 10px;
+    }
+    .banner a {
+        display: block;
+        margin: 10px auto;
+    }
+    .pil {
+        display: none;
+    }
+    .pil2 {
+        display: none;
+    }
+    .content-aktiviteter {
+        display: flex;
+        flex-direction: column;
+    }
+    .content-aktiviteter h1 {
+        font-size: 20px;
+    }
+    .content-aktiviteter .p1 {
+        font-size: 15px;
+    }
+    .content-aktiviteter .p2 {
+        font-size: 12px;
+    }
+    .rad {
+        display: none;
+    }
+    .fotboll-kort {
+        flex-direction: column;
+    }
+    .fotboll img {
+        width: 246px;
+        height: 369px;
+    }
+    .fotboll-text {
+        margin: auto 0;
+    }
+    .tävling-kort {
+        flex-direction: column-reverse;
+    }
+    .tävling img {
+        width: 100%;
+        height: 100%;
+        margin-top: 100px;
+    }
+    .tävling-text {
+        margin: auto 0;
+    }
+}
