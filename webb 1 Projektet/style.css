@@ -10,29 +10,37 @@
     height: 100vh;
     background-position: center;
     background-size: cover;
-    background-image: linear-gradient(rgb(0, 0, 0, 0.4), #66964e), url(sport.jpg);
+    background-image: linear-gradient(rgb(0, 0, 0, 0.7), #66964e), url(sport.jpg);
 }
 
 
 /*-----header-----*/
 
 nav {
+    position: fixed;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 10vh;
+    padding: 10px 0;
     font-family: sans-serif;
+    width: 100%;
+    transition: 0.5s;
+}
+
+nav.sticky {
+    padding: 0px;
+    background: #000;
+    z-index: 3;
 }
 
 .rubrik {
+    position: relative;
     color: rgb(226, 226, 226);
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    font-size: 15px;
-    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
 }
 
 .nav-länker {
+    position: relative;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -43,6 +51,7 @@ nav {
 }
 
 .nav-länker li {
+    position: relative;
     list-style: none;
 }
 
@@ -61,6 +70,7 @@ nav {
 }
 
 .nav-länker a {
+    position: relative;
     color: rgb(226, 226, 226);
     text-decoration: none;
     font-size: 15px;
@@ -71,7 +81,7 @@ span {
 }
 
 .meny {
-    font-size: 2rem;
+    font-size: 25px;
     margin: 0 30px;
     display: none;
     cursor: pointer;
@@ -80,7 +90,7 @@ span {
 }
 
 .close_meny {
-    font-size: 2rem;
+    font-size: 25px;
     display: none;
     cursor: pointer;
     color: rgb(226, 226, 226);
@@ -88,12 +98,12 @@ span {
 }
 
 
-/*-----content-----*/
+/*-----hem-content-----*/
 
 .centralt-text {
     text-align: center;
     color: rgb(226, 226, 226);
-    padding-top: 150px;
+    padding-top: 240px;
     letter-spacing: 2px;
 }
 
@@ -146,16 +156,134 @@ span {
     width: 100%;
 }
 
-.pil {
+.bakgrund-hem {
+    width: 100%;
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(90deg, transparent 0%, transparent 27%, rgba(69, 217, 158, 0.05) 27%, rgba(69, 217, 158, 0.05) 42%, transparent 42%, transparent 100%), linear-gradient(135deg, transparent 0%, transparent 38%, rgba(69, 217, 158, 0.05) 38%, rgba(69, 217, 158, 0.05) 41%, transparent 41%, transparent 100%), linear-gradient(45deg, transparent 0%, transparent 19%, rgba(69, 217, 158, 0.05) 19%, rgba(69, 217, 158, 0.05) 40%, transparent 40%, transparent 100%), linear-gradient(90deg, rgb(255, 255, 255), rgb(255, 255, 255));
+}
+
+.hem-content {
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
+}
+
+.hem-kort h1 {
+    margin: auto;
     text-align: center;
-    margin: 160px;
-    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    color: #1f8375;
+    padding-top: 60px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.rad2 {
+    padding: 7px;
+    border-bottom: 2px solid #1f8372;
+    display: block;
+    margin: 10px auto;
+    max-width: 120px;
+}
+
+.hem-kort p {
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+    font-size: 16px;
+    padding-top: 30px;
+    line-height: 27px;
+}
+
+.hem-kort {
+    padding-top: 40px;
+}
+
+.läs-mer {
+    padding-top: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.läs-mer a {
+    text-align: center;
+    width: 120px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 0;
+    color: #fff;
+    border: .5px solid #13584f;
+    position: relative;
+    background-color: #3cbead;
+    transition: 0.3s;
+}
+
+.läs-mer a:hover {
+    box-shadow: 0 0 10px 0 #1f8372;
+}
+
+.våra-projekter {
+    width: 80%;
+    margin: auto;
+    padding-top: 40px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.våra-projekter h1 {
+    font-size: 30px;
+    color: #1f8372;
+    padding-top: 120px;
+    font-weight: normal;
+}
+
+.våra-projekter h6 {
+    font-size: 12px;
+    color: red;
+}
+
+.våra-projekter h3 {
+    font-size: 20px;
+    color: #1ef1ce;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.våra-projekter p {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row {
+    margin-top: 6%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box {
+    flex-basis: 31%;
+    padding: 20px 12px;
+    background: #016159;
+    border-radius: 2%;
+    box-sizing: border-box;
+    transition: 0.4s;
+    margin-bottom: 6%;
+}
+
+.box:hover {
+    box-shadow: 0 0 30px 0 #1f8372;
 }
 
 
-/*-----content-Aktiviteter-----*/
+/*-----Aktiviteter-Content----*/
 
 .bakgrund {
     width: 100%;
@@ -163,14 +291,6 @@ span {
     background-position: center;
     background-image: radial-gradient(circle at 13% 47%, rgba(140, 140, 140, 0.03) 0%, rgba(140, 140, 140, 0.03) 25%, transparent 25%, transparent 100%), radial-gradient(circle at 28% 63%, rgba(143, 143, 143, 0.03) 0%, rgba(143, 143, 143, 0.03) 16%, transparent 16%, transparent 100%), radial-gradient(circle at 81% 56%, rgba(65, 65, 65, 0.03) 0%, rgba(65, 65, 65, 0.03) 12%, transparent 12%, transparent 100%), radial-gradient(circle at 26% 48%, rgba(60, 60, 60, 0.03) 0%, rgba(60, 60, 60, 0.03) 6%, transparent 6%, transparent 100%), radial-gradient(circle at 97% 17%, rgba(150, 150, 150, 0.03) 0%, rgba(150, 150, 150, 0.03) 56%, transparent 56%, transparent 100%), radial-gradient(circle at 50% 100%, rgba(25, 25, 25, 0.03) 0%, rgba(25, 25, 25, 0.03) 36%, transparent 36%, transparent 100%), radial-gradient(circle at 55% 52%, rgba(69, 69, 69, 0.03) 0%, rgba(69, 69, 69, 0.03) 6%, transparent 6%, transparent 100%), linear-gradient(90deg, rgb(255, 255, 255), rgb(255, 255, 255));
     background-size: cover;
-}
-
-.pil2 {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    cursor: pointer;
-    padding-top: 10px;
 }
 
 .content-aktiviteter {
@@ -187,7 +307,7 @@ span {
     padding-top: 70px;
 }
 
-.ak-rubrik {
+.rubrik2 {
     color: #2c634c;
 }
 
@@ -281,17 +401,36 @@ span {
 }
 
 
-/*-----mobil display-----*/
+/*-----mobil-display-----*/
 
 @media screen and (max-width:1024px) {
     .nav-länker {
         width: 60%;
+    }
+    .våra-projekter {
+        width: 40%;
+    }
+    .våra-projekter h1 {
+        padding-bottom: 30px;
+    }
+    .våra-projekter p {
+        padding: 0;
+    }
+    .row {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .box {
+        padding: 20px 0px;
     }
 }
 
 @media screen and (max-width: 768px) {
     body {
         overflow-x: hidden;
+    }
+    nav {
+        position: relative;
     }
     .nav-länker {
         position: fixed;
@@ -313,6 +452,10 @@ span {
         transition: top 1s ease;
         display: none;
     }
+    nav.sticky {
+        padding: 10px;
+        background: none;
+    }
     .nav-länker li {
         opacity: 1;
     }
@@ -331,9 +474,13 @@ span {
     .meny {
         display: block;
     }
+    .fa-ellipsis-v:before {
+        position: relative;
+        left: 10px;
+    }
     .rubrik {
         font-size: 10px;
-        margin-left: 12px;
+        margin-right: 40px;
     }
     .centralt-text h1 {
         font-size: 50px;
@@ -387,5 +534,52 @@ span {
     }
     .tävling-text {
         margin: auto 0;
+    }
+    .hem-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .hem-content h1 {
+        padding-top: 30px;
+        font-size: 20px;
+        text-align: center;
+    }
+    .hem-content p:nth-child(2) {
+        font-size: 16px;
+        text-align: center;
+    }
+    .hem-content p:nth-child(3) {
+        font-size: 12px;
+        text-align: center;
+    }
+    .hem-kort {
+        flex-direction: column-reverse;
+    }
+    .hem-bild img {
+        margin-left: 20px;
+        width: 246px;
+        height: 369px;
+    }
+    .hem-text {
+        margin: auto 0;
+        padding-right: 20px;
+        text-align: center;
+    }
+    .våra-projekter {
+        width: 90%;
+    }
+    .våra-projekter h1 {
+        padding-top: 0;
+    }
+    .våra-projekter p {
+        padding: 0;
+    }
+    .row {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .box {
+        padding: 20px 0px;
     }
 }
