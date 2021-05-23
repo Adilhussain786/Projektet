@@ -1,7 +1,7 @@
 /*---Meny-knapp---*/
 
 const navlänker = document.querySelector('.nav-länker');
-const x_meny = document.querySelector('.close_meny');
+const x_meny = document.querySelector('.stängd_meny');
 const meny = document.querySelector('.meny');
 
 meny.addEventListener('click', show);
@@ -15,7 +15,6 @@ function show() {
 function close() {
     navlänker.style.top = ' -100%'
 }
-
 /*---sticky_navbar---*/
 
 window.addEventListener("scroll", function() {

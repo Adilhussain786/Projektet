@@ -12,8 +12,6 @@
     background-size: cover;
     background-image: linear-gradient(rgb(0, 0, 0, 0.7), #66964e), url(sport.jpg);
 }
-
-
 /*-----header-----*/
 
 nav {
@@ -29,7 +27,7 @@ nav {
 
 nav.sticky {
     padding: 0px;
-    background: #000;
+    background: #174401;
     z-index: 3;
 }
 
@@ -89,7 +87,7 @@ span {
     z-index: 2;
 }
 
-.close_meny {
+.stängd_meny {
     font-size: 25px;
     display: none;
     cursor: pointer;
@@ -97,13 +95,10 @@ span {
     z-index: 11;
 }
 
-
-/*-----hem-content-----*/
-
 .centralt-text {
     text-align: center;
     color: rgb(226, 226, 226);
-    padding-top: 240px;
+    padding-top: 350px;
     letter-spacing: 2px;
 }
 
@@ -116,53 +111,7 @@ span {
     font-size: 15px;
     font-style: italic;
 }
-
-.banner {
-    text-align: center;
-    margin: 40px auto 0;
-    font-family: 'Poppins', sans-serif;
-    font-size: 15px;
-}
-
-.banner a {
-    width: 120px;
-    text-decoration: none;
-    display: inline-block;
-    margin: 0 10px;
-    padding: 12px 0;
-    color: rgb(226, 226, 226);
-    border: .5px solid rgb(226, 226, 226);
-    position: relative;
-    transition: 0.5s;
-    z-index: 1;
-}
-
-.banner a span {
-    width: 0;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: rgb(226, 226, 226);
-    z-index: -1;
-    transition: 0.5s;
-}
-
-.banner a:hover {
-    color: #093028;
-}
-
-.banner a:hover span {
-    width: 100%;
-}
-
-.bakgrund-hem {
-    width: 100%;
-    min-height: 100vh;
-    background-position: center;
-    background-size: cover;
-    background-image: linear-gradient(90deg, transparent 0%, transparent 27%, rgba(69, 217, 158, 0.05) 27%, rgba(69, 217, 158, 0.05) 42%, transparent 42%, transparent 100%), linear-gradient(135deg, transparent 0%, transparent 38%, rgba(69, 217, 158, 0.05) 38%, rgba(69, 217, 158, 0.05) 41%, transparent 41%, transparent 100%), linear-gradient(45deg, transparent 0%, transparent 19%, rgba(69, 217, 158, 0.05) 19%, rgba(69, 217, 158, 0.05) 40%, transparent 40%, transparent 100%), linear-gradient(90deg, rgb(255, 255, 255), rgb(255, 255, 255));
-}
+/*-----hem-content-----*/
 
 .hem-content {
     width: 100%;
@@ -171,36 +120,49 @@ span {
     justify-content: center;
 }
 
-.hem-kort h1 {
+.hem-content h1 {
     margin: auto;
     text-align: center;
     font-family: 'Poppins', sans-serif;
     font-size: 30px;
-    color: #1f8375;
+    color: #12724d;
     padding-top: 60px;
     font-weight: bold;
     text-transform: uppercase;
 }
 
+.hem-kort {
+    padding-top: 40px;
+}
+
 .rad2 {
     padding: 7px;
-    border-bottom: 2px solid #1f8372;
+    border-bottom: 2px solid #06c079;
     display: block;
     margin: 10px auto;
     max-width: 120px;
+}
+
+.hem-kort-row {
+    margin-top: 6%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.txt1 {
+    flex-basis: 31%;
+    padding: 20px 0px;
 }
 
 .hem-kort p {
     margin: auto;
     font-family: 'Poppins', sans-serif;
     color: #000;
-    font-size: 16px;
+    font-size: 14px;
+    letter-spacing: 2px;
     padding-top: 30px;
     line-height: 27px;
-}
-
-.hem-kort {
-    padding-top: 40px;
+    font-weight: bold;
 }
 
 .läs-mer {
@@ -208,6 +170,7 @@ span {
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .läs-mer a {
@@ -219,18 +182,17 @@ span {
     color: #fff;
     border: .5px solid #13584f;
     position: relative;
-    background-color: #3cbead;
+    background-color: #2ea865;
     transition: 0.3s;
 }
 
 .läs-mer a:hover {
-    box-shadow: 0 0 10px 0 #1f8372;
+    box-shadow: 0 0 10px 0 #28b362;
 }
+/*----Projekter-Section----*/
 
 .våra-projekter {
-    width: 80%;
     margin: auto;
-    padding-top: 40px;
     text-align: center;
     font-family: 'Poppins', sans-serif;
 }
@@ -238,7 +200,7 @@ span {
 .våra-projekter h1 {
     font-size: 30px;
     color: #1f8372;
-    padding-top: 120px;
+    padding-top: 100px;
     font-weight: normal;
 }
 
@@ -249,7 +211,7 @@ span {
 
 .våra-projekter h3 {
     font-size: 20px;
-    color: #1ef1ce;
+    color: rgb(253, 253, 253);
     font-weight: bold;
     padding-bottom: 20px;
 }
@@ -260,43 +222,212 @@ span {
     font-weight: 300;
     line-height: 22px;
     padding: 10px;
+    letter-spacing: 1.4px;
 }
 
-.row {
+.projekter-row {
     margin-top: 6%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .box {
-    flex-basis: 31%;
+    flex-basis: 21%;
     padding: 20px 12px;
-    background: #016159;
+    background: #174401f1;
     border-radius: 2%;
     box-sizing: border-box;
     transition: 0.4s;
     margin-bottom: 6%;
 }
 
-.box:hover {
-    box-shadow: 0 0 30px 0 #1f8372;
+.box p {
+    text-align: start;
 }
+.box:hover {
+    box-shadow: 0 0 30px 0 #174401f1;
+}
+/*----kort-om-covid-Section---*/
 
-
-/*-----Aktiviteter-Content----*/
-
-.bakgrund {
+.om-covid {
     width: 100%;
     min-height: 100vh;
     background-position: center;
-    background-image: radial-gradient(circle at 13% 47%, rgba(140, 140, 140, 0.03) 0%, rgba(140, 140, 140, 0.03) 25%, transparent 25%, transparent 100%), radial-gradient(circle at 28% 63%, rgba(143, 143, 143, 0.03) 0%, rgba(143, 143, 143, 0.03) 16%, transparent 16%, transparent 100%), radial-gradient(circle at 81% 56%, rgba(65, 65, 65, 0.03) 0%, rgba(65, 65, 65, 0.03) 12%, transparent 12%, transparent 100%), radial-gradient(circle at 26% 48%, rgba(60, 60, 60, 0.03) 0%, rgba(60, 60, 60, 0.03) 6%, transparent 6%, transparent 100%), radial-gradient(circle at 97% 17%, rgba(150, 150, 150, 0.03) 0%, rgba(150, 150, 150, 0.03) 56%, transparent 56%, transparent 100%), radial-gradient(circle at 50% 100%, rgba(25, 25, 25, 0.03) 0%, rgba(25, 25, 25, 0.03) 36%, transparent 36%, transparent 100%), radial-gradient(circle at 55% 52%, rgba(69, 69, 69, 0.03) 0%, rgba(69, 69, 69, 0.03) 6%, transparent 6%, transparent 100%), linear-gradient(90deg, rgb(255, 255, 255), rgb(255, 255, 255));
     background-size: cover;
+    background: #f2f2f2;
+    padding: 100px;
+}
+
+.om-covid h1 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    color: #1f8372;
+    text-transform: uppercase;
+}
+
+.om-covid h2 {
+    display: flex;
+    justify-content: start;
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+    font-size: 20px;
+    line-height: 1.5em;
+    padding-top: 50px;
+    letter-spacing: 2px;
+}
+
+.om-covid li {
+    list-style: square outside;
+    color: #3cbead;
+}
+
+.lista {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+    padding: 30px;
+    letter-spacing: 2px;
+    width: 50%;
+}
+/*--hem-footer---*/
+
+footer {
+    padding: 60px;
+    width: 100%;
+    min-height: 40vh;
+    background-position: center;
+    background-size: cover;
+    background: #174401;
+}
+
+.footer-row {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer-col h1 {
+    font-size: 60px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #fff;
+}
+
+.footer-logo {
+    box-sizing: border-box;
+}
+
+.footer-logo img {
+    height: 80px;
+}
+
+.rad3 {
+    padding-top: 90px;
+    border-bottom: 2px solid rgb(253, 253, 253);
+    display: block;
+    margin: 10px auto;
+    max-width: 1200px;
+}
+
+.footer-lista {
+    position: relative;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    font-size: 14px;
+    padding-top: 20px;
+}
+
+.footer-lista ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-lista li {
+    position: relative;
+    list-style: none;
+    display: inline;
+    padding: 0px 12px;
+    border-right: 1px solid #fff;
+}
+
+.footer-lista li:last-child {
+    border: none;
+}
+
+.footer-lista a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.sociala-medier {
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 40px;
+}
+
+.sociala-medier a:hover {
+    color: yellowgreen;
+    transition: 0.4s;
+}
+/*-----Aktiviteter-sida----*/
+
+.aktiviteter-bakgrund {
+    height: 60vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(rgb(0, 0, 0, 0.7), #1f8372), url(bakgrund-aktiviteter.jpg);
+    text-align: center;
+}
+
+.aktiviteter-content-bakgrund {
+    width: 100%;
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-image: radial-gradient(circle at 13% 47%, rgba(140, 140, 140, 0.03) 0%, rgba(140, 140, 140, 0.03) 25%, transparent 25%, transparent 100%), radial-gradient(circle at 28% 63%, rgba(143, 143, 143, 0.03) 0%, rgba(143, 143, 143, 0.03) 16%, transparent 16%, transparent 100%), radial-gradient(circle at 81% 56%, rgba(65, 65, 65, 0.03) 0%, rgba(65, 65, 65, 0.03) 12%, transparent 12%, transparent 100%), radial-gradient(circle at 26% 48%, rgba(60, 60, 60, 0.03) 0%, rgba(60, 60, 60, 0.03) 6%, transparent 6%, transparent 100%), radial-gradient(circle at 97% 17%, rgba(150, 150, 150, 0.03) 0%, rgba(150, 150, 150, 0.03) 56%, transparent 56%, transparent 100%), radial-gradient(circle at 50% 100%, rgba(25, 25, 25, 0.03) 0%, rgba(25, 25, 25, 0.03) 36%, transparent 36%, transparent 100%), radial-gradient(circle at 55% 52%, rgba(69, 69, 69, 0.03) 0%, rgba(69, 69, 69, 0.03) 6%, transparent 6%, transparent 100%), linear-gradient(90deg, rgb(255, 255, 255), rgb(255, 255, 255));
+}
+
+.nav-ak.sticky {
+    background: #14744f;
+}
+
+.span-ak {
+    color: #1bf5d0;
+}
+
+.fa-swimmer {
+    color: #fff;
+    font-size: 140px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    padding-top: 170px;
+}
+
+.content-aktiviteter h1 {
+    color: #0a9e85;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    padding-top: 30px;
 }
 
 .content-aktiviteter {
+    padding-top: 40px;
     width: 80%;
     margin: auto;
     text-align: center;
+    letter-spacing: 1px;
 }
 
 .content-aktiviteter h1 {
@@ -304,34 +435,22 @@ span {
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
-    padding-top: 70px;
 }
 
-.rubrik2 {
-    color: #2c634c;
-}
-
-.content-aktiviteter .p1 {
-    font-size: 18px;
+.content-aktiviteter h2 {
+    font-size: 26px;
+    text-transform: uppercase;
     font-family: 'Poppins', sans-serif;
-    color: #000;
+    color: #0a9e85;
     font-weight: 500;
     padding: 10px;
 }
 
-.content-aktiviteter .p2 {
-    font-size: 15px;
-    font-family: 'Poppins', sans-serif;
-    color: #000;
-    font-weight: 500;
-    padding-bottom: 10px;
-}
-
 .rad {
-    border-bottom: 2px solid #2c634c;
+    border-bottom: 2px solid #11c9aa;
     display: block;
     margin: 10px auto;
-    max-width: 1000px;
+    max-width: 600px;
 }
 
 .fotboll-kort {
@@ -363,29 +482,22 @@ span {
 
 .fotboll-text p {
     font-family: 'Poppins', sans-serif;
+    color: #000;
+    font-weight: bold;
+    text-align: start;
+    padding: 0px 100px;
 }
 
 .tävling-kort {
-    margin: 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.tävling {
-    flex-basis: 50%;
-    padding: 60px 12px;
-    box-sizing: border-box;
+    padding-bottom: 60px;
 }
 
 .tävling-text h1 {
     padding: 10px;
     color: #B20809;
-}
-
-.tävling img {
-    box-shadow: 31px 33px 5px -4px rgba(178, 8, 9, 0.59);
-    -webkit-box-shadow: 31px 33px 5px -4px rgba(178, 8, 9, 0.59);
 }
 
 .tävling-text {
@@ -398,39 +510,660 @@ span {
 
 .tävling-text p {
     font-family: 'Poppins', sans-serif;
+    color: #000;
+    font-weight: bold;
+    text-align: start;
+    padding: 0px 100px;
 }
 
+.tävling {
+    flex-basis: 50%;
+    padding: 60px 12px;
+    box-sizing: border-box;
+}
 
-/*-----mobil-display-----*/
+.tävling img {
+    box-shadow: 31px 33px 5px -4px rgba(178, 8, 9, 0.59);
+    -webkit-box-shadow: 31px 33px 5px -4px rgba(178, 8, 9, 0.59);
+}
+
+.footer-bakgrund-ak {
+    background: #14744f;
+}
+
+.footer-ak {
+    background: #14744f;
+}
+
+.sociala-medier .a-ak:hover {
+    color: #1bf5d0;
+    transition: 0.4s;
+}
+/*-----Om-oss-sida----*/
+
+.om-bakgrund {
+    height: 60vh;
+    width: 100%;
+    background-position: bottom;
+    background-size: cover;
+    background-image: linear-gradient(rgb(0, 0, 0, 0.7), #36b96f), url(om-oss.jpg);
+    text-align: center;
+}
+
+.nav-oss.sticky {
+    background: #3d9462;
+}
+
+.span-om {
+    color: #02ff70;
+}
+
+.fa-users {
+    color: #fff;
+    font-size: 140px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    padding-top: 170px;
+}
+
+.om-oss {
+    width: 80%;
+    margin: auto;
+    letter-spacing: 1px;
+}
+
+.om-oss h1 {
+    color: #3d9462;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.om-oss h2 {
+    color: #3d9462;
+    font-weight: 500;
+    font-size: 26px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px;
+}
+
+.om-oss p {
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.om-oss-content h1 {
+    color: #3d9462;
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    padding: 0 120px;
+    padding-top: 60px;
+    font-weight: normal;
+    text-align: start;
+}
+
+.om-oss-content p {
+    font-size: 14px;
+    padding: 20px 120px 30px 120px;
+    text-align: start;
+}
+
+.rad-om {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 70px;
+}
+
+.rad-om2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 70px 0px;
+}
+
+.col-om {
+    font-size: 40px;
+    color: #3d9462;
+    text-align: center;
+}
+
+.col-om p {
+    padding-top: 14px;
+}
+
+.col-om p:last-child {
+    font-size: 10px;
+    width: 170px;
+    line-height: 23px;
+}
+
+.vårt-team h1 {
+    color: #3d9462;
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    padding: 60px 120px;
+    font-weight: normal;
+    text-align: start;
+}
+
+.medlemmar-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 70px 0px 40px 200px;
+}
+
+.medlemmar-row2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 70px 0px 200px 200px;
+}
+
+.medlemmar-text h2 {
+    color: #000;
+    padding: 0px 0px 7px 0px;
+    text-transform: none;
+    text-align: start;
+}
+.medlemmar-text {
+    padding: 0px 100px;
+}
+.medlemmar-text p {
+    text-align: start;
+    padding-bottom: 30px;
+}
+
+.medlemmar-col img {
+    border-radius: 50%;
+    width: 330px;
+    height: 330px;
+    border: 5px solid #45b676;
+}
+
+.footer-bakgrund-om {
+    background: #3d9462;
+}
+
+.sociala-medier .a-om:hover {
+    color: #02ff70;
+    transition: 0.4s;
+}
+/*-----Covid-Sida-----*/
+
+.covid-bakgrund {
+    height: 60vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(rgb(0, 0, 0, 0.7), #dba123), url(covid.jpg);
+    text-align: center;
+}
+
+.fa-viruses {
+    color: #fff;
+    font-size: 140px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    padding-top: 170px;
+}
+
+.nav-covid.sticky {
+    background: #a77200;
+}
+
+.covid-sida {
+    width: 80%;
+    margin: auto;
+    letter-spacing: 1px;
+}
+
+.span-covid {
+    color: #ffd988;
+}
+
+.covid-sida h1 {
+    color: #926503;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.covid-sida h2 {
+    color: #926503;
+    font-weight: 500;
+    font-size: 26px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px;
+}
+
+.covid-sida p {
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.rad-covid {
+    border-bottom: 2px solid #ffb007;
+    display: block;
+    margin: 10px auto;
+    max-width: 1000px;
+}
+
+.covid-content h1 {
+    color: #926503;
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    padding: 0 120px;
+    padding-top: 60px;
+    font-weight: normal;
+    text-align: start;
+    text-transform: none;
+}
+
+.covid-content p {
+    font-size: 14px;
+    padding: 20px 120px 30px 120px;
+    text-align: start;
+}
+
+.row-covid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 70px 0px;
+}
+
+.col-covid {
+    font-size: 40px;
+    color: #bb8001;
+    text-align: center;
+}
+
+.col-covid p {
+    padding-top: 14px;
+}
+
+.col-covid p:last-child {
+    font-size: 10px;
+    width: 170px;
+    line-height: 23px;
+}
+
+.footer-bakgrund-covid {
+    background: #a77200;
+}
+
+.sociala-medier .a-covid:hover {
+    color: #ffc23d;
+    transition: 0.4s;
+}
+
+/*-----Kontakta-oss-sida-----*/
+
+.kontakta-bakgrund {
+    height: 60vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(rgb(0, 0, 0, 0.7), #0071a5), url(kontakta.jpg);
+    text-align: center;
+}
+
+.fa-phone-alt {
+    color: #fff;
+    font-size: 140px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    padding-top: 170px;
+}
+
+.nav-kn.sticky {
+    background: #0071a5;
+}
+
+.span-kn {
+    color: #81d7ff;
+}
+.kontakta-oss {
+    width: 80%;
+    margin: auto;
+    letter-spacing: 1px;
+}
+.kontakta-oss h1 {
+    color: #005c86;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.kontakta-oss h2 {
+    color: #005c86;
+    font-weight: 500;
+    font-size: 26px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px;
+}
+
+.rad-kontakt {
+    border-bottom: 2px solid #005c86;
+    display: block;
+    margin: 10px auto;
+    max-width: 600px;
+}
+.kontakta-oss-content h1{
+    color: #005c86;
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    padding: 0 120px;
+    padding-top: 60px;
+    font-weight: normal;
+    text-align: start;
+}
+
+.kontakta-oss-row {
+    padding: 50px;
+    padding-bottom: 90px;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.kontakta-oss-row h3 {
+        font-size: 20px;
+        color: #005c86;
+        font-weight: bold;
+        padding-bottom: 20px;
+}
+
+.kontakta-oss-row p {
+    color: #3a3a3a;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+    letter-spacing: 1.4px;
+}
+
+.box-kn {
+    width: 350px;
+    height: 350px;
+    padding: 3.5rem 0;
+    background: #e2e4e5;
+    box-sizing: border-box;
+    transition: 0.4s;
+}
+
+.fa-phone-square-alt {
+    font-size: 80px;
+    padding: 40px 0px 20px 0px;
+    color: #a3a3a3;
+    transition: 0.3s;
+}
+.fa-phone-square-alt:hover {
+    color:#005c86;
+}
+
+.fa-envelope-square {
+    font-size: 80px;
+    padding: 40px 0px 20px 0px;
+    color: #a3a3a3;
+    transition: 0.3s;
+}
+.fa-envelope-square:hover {
+    color:#005c86;
+}
+.fa-map-marker-alt {
+    font-size: 80px;
+    padding: 40px 0px 20px 0px;
+    color: #a3a3a3;
+    transition: 0.3s;
+}
+.fa-map-marker-alt:hover {
+    color:#005c86;
+}
+.box-kn a {
+    color: #3a3a3a;
+    text-decoration: none;
+    text-align: center;
+}
+
+.kontakta-oss-läs-mer {
+    background: #eeeded;
+    min-height: 50vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.kontakta-oss-läs-mer h1 {
+    color: #005c86;
+    font-size: 45px;
+    font-family: 'Poppins', sans-serif;
+    padding: 120px;
+    padding-bottom: 30px;
+    font-weight: normal;
+    text-align: center;
+}
+.läs-mer-kn {
+    padding-top: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.läs-mer-kn a {
+    text-align: center;
+    width: 120px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 0;
+    color: #fff;
+    position: relative;
+    background: #005c86;
+    transition: 0.3s;
+}
+.läs-mer-kn a:hover {
+    box-shadow:0 0 10px 0 #005c86 ;
+}
+.footer-bakgrund-kontakta {
+    background: #0071a5;
+}
+.sociala-medier .a-kn:hover {
+    color: aqua;
+}
+/*-----ipad-display-----*/
 
 @media screen and (max-width:1024px) {
+    /*-----hem-sida-----*/
     .nav-länker {
         width: 60%;
     }
-    .våra-projekter {
-        width: 40%;
+    .centralt-text h1 {
+        font-size: 70px;
+    }
+    .centralt-text p {
+        font-size: 14px;
+    }
+    .hem-content h1 {
+        font-size: 20px;
+    }
+    .hem-content p {
+        font-size: 12px;
     }
     .våra-projekter h1 {
-        padding-bottom: 30px;
+        font-size: 26px;
+    }
+    .våra-projekter h6 {
+        font-size: 12px;
     }
     .våra-projekter p {
-        padding: 0;
+        padding: 0px 10px;
+        font-size: 12px;
     }
-    .row {
+    .projekter-row {
         flex-direction: column;
         justify-content: space-evenly;
+        align-items: center;
     }
     .box {
+        width: 400px;
         padding: 20px 0px;
     }
+    .txt1 {
+        padding: 20px 20px;
+    }
+    /*----kort-om-covid-section-----*/
+    .om-covid {
+        min-height: 70vh;
+    }
+    .om-covid h1 {
+        font-size: 20px;
+    }
+    .om-covid h2 {
+        font-size: 14px;
+    }
+    .stycke1 {
+        font-size: 12px;
+    }
+    .lista {
+        font-size: 11px;
+    }
+    /*-----footer-----*/
+    .footer-col h1 {
+        font-size: 30px;
+    }
+    .rad3 {
+        display: none;
+    }
+    .footer {
+        padding: 0;
+    }
+    .footer-row {
+        flex-direction: column-reverse;
+        padding-top: 120px;
+    }
+    .footer-col h1 {
+        font-size: 40px;
+        padding-top: 40px;
+    }
+    .footer-lista ul {
+        flex-direction: column;
+    }
+    .footer-lista {
+        flex-direction: column;
+        float: none;
+        padding: 20px 0px;
+    }
+    .footer-lista li {
+        border-right: none;
+        padding-bottom: 10px;
+        text-align: center;
+        font-size: 16px;
+    }
+    .footer-logo img {
+        height: 80px;
+    }
+    .rad3 {
+        display: none;
+    }
+    .sociala-medier {
+        padding: 0;
+    }
+    .footer-lista ul:last-child {
+        flex-direction: row;
+    }
+    /*-----Aktiviteter-sida-----*/
+    .aktiviteter-bakgrund {
+        height: 50vh;
+    }
+    .fa-swimmer {
+        padding-top: 300px;
+    }
+    .fotboll-text p {
+        padding: 0px 0px;
+    }
+    .tävling-text p {
+        padding: 0px 0px;
+    }
+    .medlemmar-row {
+        padding: 70px 0px 40px 0px;
+    }
+    .medlemmar-row2 {
+        padding: 70px 0px 200px 0px;
+    }
+    /*-----Om-oss-sida-----*/
+    .om-bakgrund {
+        height: 50vh;
+    }
+    .fa-users {
+        padding-top: 300px;
+    }
+    /*-----Covid-sida-----*/
+    .covid-bakgrund {
+        height: 50vh;
+    }
+    .fa-viruses {
+        padding-top: 300px;
+    }
+    /*-----Kontakta-oss-sida-----*/
+    .kontakta-bakgrund {
+        height: 50vh;
+    }
+    .fa-phone-alt {
+        padding-top: 300px;
+    }
+    .kontakta-oss-row {
+        flex-direction: column;
+        text-align: center;
+    }
+    .box-kn {
+        width: 100%;
+        margin-bottom: 9%;
+    }
+    .kontakta-oss-läs-mer {
+        min-height: 35vh;
+    }
+    .kontakta-oss-läs-mer h1 {
+        padding: 140px 0px 30px 0px;
+    }
 }
+/*-----mobile-display-----*/
 
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     body {
         overflow-x: hidden;
     }
+    /*-----hem-sida-----*/
     nav {
         position: relative;
+        justify-content: space-evenly;
     }
     .nav-länker {
         position: fixed;
@@ -444,17 +1177,13 @@ span {
         justify-content: space-around;
         align-items: center;
         background: #093028;
-        /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #577747, #093028);
-        /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #577747, #093028);
-        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background: #174401;
         transition: top 1s ease;
         display: none;
     }
     nav.sticky {
-        padding: 10px;
         background: none;
+        padding: 3px;
     }
     .nav-länker li {
         opacity: 1;
@@ -462,10 +1191,13 @@ span {
     .nav-länker a {
         font-size: 30px;
     }
-    span {
-        color: rgb(226, 226, 226);
+    .nav-ak.sticky {
+        background: none;
     }
-    .close_meny {
+    #nav-ak {
+        background: #14744f;
+    }
+    .stängd_meny {
         display: block;
         position: absolute;
         left: 30px;
@@ -476,27 +1208,141 @@ span {
     }
     .fa-ellipsis-v:before {
         position: relative;
-        left: 10px;
     }
-    .rubrik {
-        font-size: 10px;
-        margin-right: 40px;
+    .rubrik img {
+        height: 40px;
+        padding-right: 20px;
+    }
+    .centralt-text {
+        padding-top: 250px;
     }
     .centralt-text h1 {
-        font-size: 50px;
+        font-size: 40px;
     }
     .centralt-text p {
         font-size: 10px;
     }
-    .banner a {
+    /*-----hem-content-----*/
+    .hem-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .hem-content h1 {
+        padding-top: 30px;
+        font-size: 20px;
+        text-align: center;
+    }
+    .hem-kort {
+        flex-direction: column;
+    }
+    .hem-kort p {
+        font-size: 12px;
+        padding: 6px 50px;
+    }
+    .hem-kort-row {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .hem-bild img {
+        margin-left: 20px;
+        width: 246px;
+        height: 369px;
+    }
+    .txt1 {
+        padding: 0 0;
+    }
+    .läs-mer {
+        padding: 40px;
+    }
+    /*-----projekter-section-----*/
+    .våra-projekter {
+        width: 90%;
+    }
+    .våra-projekter h1 {
+        padding: 0;
+        font-size: 20px;
+    }
+    .våra-projekter h6 {
+        font-size: 11px;
+    }
+    .våra-projekter p {
+        padding: 0px 10px;
+        font-size: 10px;
+    }
+    .box {
+        padding: 20px 0px;
+        width: 300px;
+    }
+    .projekter-row {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    /*----kort-om-covid-section-----*/
+    .om-covid {
+        padding: 50px;
+    }
+    .om-covid h1 {
+        font-size: 20px;
+        text-align: center;
+    }
+    .om-covid h2 {
+        font-size: 14px;
+    }
+    .stycke1 {
+        font-size: 12px;
+        padding-top: 20px;
+    }
+    .lista {
+        font-size: 12px;
+        width: 100%;
+        padding: 30px 0;
+    }
+    .col2-om {
+        width: 100%;
         display: block;
-        margin: 10px auto;
     }
-    .pil {
+    /*---footer---*/
+    footer {
+        padding: 30px;
+    }
+    .footer-row {
+        flex-direction: column-reverse;
+        padding: 30px 0px;
+    }
+    .footer-col h1 {
+        font-size: 26px;
+        padding-top: 20px;
+    }
+    .footer-lista ul {
+        flex-direction: column;
+    }
+    .footer-lista {
+        flex-direction: column;
+        float: none;
+        padding: 20px 0px;
+    }
+    .footer-lista li {
+        border-right: none;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+    .footer-logo img {
+        height: 40px;
+    }
+    .rad3 {
         display: none;
     }
-    .pil2 {
-        display: none;
+    .sociala-medier {
+        padding: 0;
+    }
+    .footer-lista ul:last-child {
+        flex-direction: row;
+    }
+    /*---aktiviteter-sida---*/
+    .fa-swimmer {
+        font-size: 100px;
+        padding-top: 100px;
     }
     .content-aktiviteter {
         display: flex;
@@ -505,11 +1351,12 @@ span {
     .content-aktiviteter h1 {
         font-size: 20px;
     }
-    .content-aktiviteter .p1 {
-        font-size: 15px;
+    .content-aktiviteter h2 {
+        font-size: 18px;
     }
-    .content-aktiviteter .p2 {
+    .content-aktiviteter p {
         font-size: 12px;
+        text-align: start;
     }
     .rad {
         display: none;
@@ -523,63 +1370,333 @@ span {
     }
     .fotboll-text {
         margin: auto 0;
+        text-align: start;
+    }
+    .fotboll-text p {
+        padding: 0px 10px;
     }
     .tävling-kort {
         flex-direction: column-reverse;
+        padding-bottom: 30px;
     }
     .tävling img {
-        width: 100%;
-        height: 100%;
-        margin-top: 100px;
+        width: 246px;
+        height: 369px;
+        margin-top: 50px;
     }
     .tävling-text {
         margin: auto 0;
+        padding-bottom: 30px;
+        text-align: start;
     }
-    .hem-content {
-        display: flex;
+    .tävling-text p {
+        padding: 0px 10px;
+        padding-bottom: 20px;
+    }
+    /*---om-oss-sida---*/
+    .nav-oss.sticky {
+        background: none;
+    }
+    #nav-om {
+        background: #3d9462;
+    }
+    .fa-users {
+        font-size: 100px;
+        padding-top: 100px;
+    }
+    .om-oss h1 {
+        font-size: 20px;
+    }
+    .om-oss h2 {
+        font-size: 18px;
+    }
+    .om-oss p {
+        font-size: 12px;
+        text-align: start;
+    }
+    .om-oss-content h1 {
+        padding: 40px 0 0 0;
+        text-align: center;
+    }
+    .om-oss-content p {
+        padding: 20px 0px 30px 0px;
+    }
+    .rad-om {
         flex-direction: column;
-        align-items: center;
+    }
+    .rad-om p {
+        text-align: center;
+    }
+    .col-om {
+        padding: 10px 0px;
+    }
+    .col-om p:last-child {
+        width: 100%;
+    }
+    .rad-om2 {
+        flex-direction: column;
+        padding: 10px 0px;
+    }
+    .rad-om2 p {
+        text-align: center;
+    }
+    .vårt-team h1 {
+        text-align: center;
+        padding: 60px 0px;
+    }
+    .medlemmar-row {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 0px 50px 0px;
+    }
+    .medlemmar-row2 {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 10px 0px 100px 0px;
+    }
+    .medlemmar-col img {
+        width: 260px;
+        height: 260px;
+    }
+    .medlemmar-text h2 {
+        text-align: center;
+    }
+    .medlemmar-text {
+        padding: 0px 0px;
+    }
+    .medlemmar-text p {
+        text-align: center;
+        padding-top: 7px;
+        padding-bottom: 10px;
+    }
+    /*-----Covid-sida-----*/
+    .nav-covid.sticky {
+        background: none;
+    }
+    #nav-covid {
+        background: #a77200;
+    }
+    .fa-viruses {
+        font-size: 100px;
+        padding-top: 100px;
+    }
+    .covid-sida h1 {
+        font-size: 20px;
+    }
+    .covid-sida h2 {
+        font-size: 18px;
+    }
+    .covid-sida p {
+        font-size: 12px;
+        text-align: start;
+    }
+    .covid-content h1 {
+        font-size: 18px;
+        padding: 40px 0 0 0;
+        text-align: center;
+    }
+    .covid-content p {
+        padding: 20px 0px 30px 0px;
+    }
+    .row-covid {
+        flex-direction: column;
+    }
+    .row-covid p {
+        text-align: center;
+    }
+    .col-covid {
+        padding: 10px 0px;
+    }
+    .col-covid p:last-child {
+        width: 100%;
+    }
+    .rad-covid {
+        display: none;
+    }
+    /*-----Kontakta-oss-sida-----*/
+    .nav-kn.sticky {
+        background: none;
+    }
+    #nav-kn {
+        background: #0071a5;
+    }
+    .fa-phone-alt {
+        font-size: 80px;
+        padding-top: 80px;
+    }
+    .kontakta-oss h1 {
+        font-size: 20px;
+    }
+    .kontakta-oss h2 {
+        font-size: 18px;
+        padding-bottom: 50px;
+    }
+    .rad-kontakt {
+        display: none;
+    }
+    .kontakta-oss-content h1 {
+        font-size: 18px;
+        padding: 20px 0px 10px 0px;
+        text-align: center;
+    }
+    .kontakta-oss-row {
+        flex-direction: column;
+        padding: 20px 0px 20px 0px;
+        justify-content: space-between;
+    }
+    .kontakta-oss-row h3 {
+        font-size: 18px;
+    }
+    .kontakta-oss-row p {
+        font-size: 12px;
+        padding: 0px;
+    }
+    .box-kn {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 9%;
+    }
+    .kontakta-oss-läs-mer {
+        min-height: 40vh;
+    }
+    .kontakta-oss-läs-mer h1 {
+        padding: 55px 0px 20px 0px;
+        font-size: 35px;
+    }
+    .läs-mer-kn a {
+        width: 100px;
+    }
+}
+
+@media only screen and (max-width: 280px) {
+     /*-----Hem-sida-----*/
+    .rubrik img {
+        height: 30px;
+        padding-right: 20px;
+    }
+    .nav-länker a {
+        font-size: 25px;
+    }
+    .centralt-text {
+        padding-top: 260px;
+    }
+    .centralt-text h1 {
+        font-size: 35px;
+    }
+    .centralt-text p {
+        font-size: 10px;
     }
     .hem-content h1 {
-        padding-top: 30px;
-        font-size: 20px;
-        text-align: center;
+        font-size: 15px;
     }
-    .hem-content p:nth-child(2) {
-        font-size: 16px;
-        text-align: center;
-    }
-    .hem-content p:nth-child(3) {
-        font-size: 12px;
-        text-align: center;
-    }
-    .hem-kort {
-        flex-direction: column-reverse;
-    }
-    .hem-bild img {
-        margin-left: 20px;
-        width: 246px;
-        height: 369px;
-    }
-    .hem-text {
-        margin: auto 0;
-        padding-right: 20px;
-        text-align: center;
-    }
-    .våra-projekter {
-        width: 90%;
+    .hem-content p {
+        font-size: 10px;
     }
     .våra-projekter h1 {
-        padding-top: 0;
+        font-size: 16px;
+    }
+    .våra-projekter h3 {
+        font-size: 16px;
+    }
+    .våra-projekter h6 {
+        font-size: 10px;
     }
     .våra-projekter p {
-        padding: 0;
-    }
-    .row {
-        flex-direction: column;
-        justify-content: space-evenly;
+        font-size: 8px;
     }
     .box {
+        width: 250px;
         padding: 20px 0px;
+    }
+    .om-covid h1 {
+        font-size: 16px;
+    }
+    .om-covid h2 {
+        font-size: 12px;
+    }
+    .stycke1 {
+        font-size: 10px;
+    }
+    .lista {
+        font-size: 10px;
+    }
+     /*-----Footer-----*/
+    footer {
+        padding: 0px;
+    }
+    .footer-col h1 {
+        font-size: 22px;
+    }
+    .footer-lista li {
+        border-right: none;
+        padding-bottom: 10px;
+        text-align: center;
+        font-size: 13px;
+    }
+    .footer-logo img {
+        height: 40px;
+    }
+     /*-----Aktiviteter-sida-----*/
+    .content-aktiviteter h1 {
+        font-size: 18px;
+    }
+    .content-aktiviteter .p1 {
+        font-size: 16px;
+    }
+    .fotboll img {
+        width: 200px;
+        height: 300px;
+    }
+    .fotboll-text p {
+        font-size: 14px;
+    }
+    .tävling img {
+        width: 200px;
+        height: 300px;
+    }
+    .tävling-text {
+        font-size: 14px;
+    }
+     /*-----Om-oss-sida-----*/
+    .om-oss h1 {
+         font-size: 18px;
+    }
+    .om-oss h2 {
+        font-size: 16px;
+    }
+    .om-oss-content h1 {
+        font-size: 16px;
+    }
+    .vårt-team h1 {
+        padding: 60px 0px;
+    }
+    .medlemmar-col img {
+        width: 230px;
+        height: 230px;
+    }
+     /*-----Covid-sida-----*/
+    .covid-sida h1 {
+        font-size: 18px;
+    }
+    .covid-sida h2 {
+        font-size: 16px;
+    }
+    .covid-content h1 {
+        font-size: 14px;
+    }
+    .fa-phone-square-alt {
+        font-size: 60px;
+    }
+    .fa-envelope-square {
+        font-size: 60px;
+    }
+    .fa-map-marker-alt {
+        font-size: 60px;
+    }
+    .kontakta-oss-row h3 {
+        font-size: 16px;
+    }
+    .kontakta-oss-row p {
+        font-size: 10px;
     }
 }
